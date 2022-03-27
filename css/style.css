@@ -1,6 +1,8 @@
 :root {
-    --dark-blue: #0A0F2B;
+    --dark-blue: #0a0f2b;
     --red: #f1474e;
+    --light-pink: #f8a3a6;
+    --hero-black: #0a0f2b;
 }
 
 html {
@@ -157,6 +159,13 @@ html {
       bottom: 0;
   }
 
+  .first-title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+  }
+
   /* header */
   .top-bar {
     font-size: 14px;
@@ -281,4 +290,38 @@ html {
 
   .nav__mob-link {
       display: none;
+  }
+
+  /* hero */
+  .hero {
+      height: calc(100vh - 172px);
+      color: var(--hero-black);
+      
+  }
+
+  .hero__container {
+      -webkit-box-pack: center;
+         -ms-flex-pack: center;
+       justify-content: center;
+         -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+      height: 100%;
+      background-color: var(--light-pink);
+      background-image: url("../img/Bg_hero.jpg");
+      background-repeat: no-repeat;
+      background-position:  left top;
+      background-size: cover;
+  }
+
+  .hero__title {
+      max-width: 49%;
+  }
+
+  .hero__description {
+      max-width: 43%;
+      font-weight: 400;
+      font-size: 33px;
+      line-height: 35px;
   }
