@@ -1,0 +1,108 @@
+@media screen and (max-width: 1500px){
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .top-bar__contacts {
+        -webkit-box-pack: start;
+           -ms-flex-pack: start;
+         justify-content: flex-start;
+    }
+
+    .top-list__item {
+        line-height: 2;
+    }
+
+    .top-link {
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .top-link.top-mail,
+    .top-link.top-map {
+        display: none;
+    }
+
+    .top-bar__flags {
+        min-width: 104px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .nav{
+        position: fixed;
+           -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;
+        top: 52px;
+        right: 0;
+        width: max-content;
+        max-width: 100%;
+        padding: 20px;
+        box-shadow: -3px 5px 8px #000;
+        background-color: #fff;
+        visibility: hidden;
+        -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+                transform: translateX(100%);
+             -o-transition: all .3s linear;
+                transition: all .3s linear;
+                transition: all .3s linear, -webkit-transform .3s linear;
+    }
+
+    .nav__list-links {
+           -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;
+        -webkit-box-align: center;
+           -ms-flex-align: center;
+              align-items: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .main-link__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .nav__btn {
+        margin-bottom: 30px;
+    }
+
+    .nav__mob-link:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .nav__mob-link.top-mail,
+    .nav__mob-link.top-map {
+        display: block;
+    }
+
+    .nav__mob-link.top-mail::before,
+    .nav__mob-link.top-map::before {
+        filter: invert(1);
+    }
+
+    .btn-burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-bar__contacts {
+           -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;
+    }
+
+    .nav {
+        top: 80px;
+    }
+}
