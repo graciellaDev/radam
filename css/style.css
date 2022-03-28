@@ -93,10 +93,6 @@ html {
     display: flex;
   }
 
-  .section {
-    
-  }
-
   .btn-red {
     padding: 13px 40px;
     border-radius: 10px;
@@ -166,6 +162,10 @@ html {
     font-size: 40px;
     line-height: 47px;
     text-transform: uppercase;
+  }
+
+  .hidden {
+      overflow: hidden;
   }
 
   /* header */

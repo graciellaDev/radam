@@ -1,12 +1,14 @@
 // click on burger-menu
 let burger = document.querySelector('.btn-burger'),
-    spanBurger = document.querySelector('.span-burger')
-    nav = document.querySelector('.nav')
+    spanBurger = document.querySelector('.span-burger'),
+    nav = document.querySelector('.nav'),
+    body = document.querySelector('body')
     
 
 burger.addEventListener('click', () => {
     nav.classList.toggle('turn-left')
     spanBurger.classList.toggle('btn-burger-close')
+    body.classList.toggle('hidden')
     let ariaLabelBurger = burger.getAttribute('aria-label')
     if(ariaLabelBurger == 'Разгарнуць меню') {
         burger.setAttribute('aria-label', 'Згарнуць меню')
