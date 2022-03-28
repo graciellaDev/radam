@@ -19,6 +19,16 @@
     .top-link {
         padding-left: 25px;
     }
+
+    /* services */
+    .tab-icon {
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .tab-title {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -103,6 +113,39 @@
     .hero__description {
         max-width: 80%;
     }
+
+    /* services */
+    .tabs-nav {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .tabs-nav__btn:first-child,
+    .tabs-nav__btn:nth-child(2) {
+        flex-basis: calc((100% - 15px)/2);
+        margin-bottom: 15px;
+    }
+
+    .tabs-nav__btn:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .tabs-nav__btn:nth-child(n + 3) {
+        flex-basis: calc((100% - 30px)/3);
+    }
+
+    .tab-content {
+        background-image: none;
+    }
+
+    .tab-description {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .tab-content__arrows {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -140,5 +183,36 @@
         max-width: 100%;
         font-size: 19px;
         line-height: 1.5;
+    }
+
+    /* services */
+    .tabs-nav__btn {
+        padding: 20px 15px;
+    }
+
+    .tabs-nav__btn:not(:last-child) {
+        flex-basis: calc((100% - 15px)/2);
+        margin-bottom: 15px;
+    }
+
+    .tabs-nav__btn:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .tabs-nav__btn:nth-child(2n + 1):not(:last-child) {
+        margin-right: 15px;
+    }
+
+    .tabs-nav__btn:last-child {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .tabs-nav__btn:nth-child(n) {
+        flex-basis: 100%;
+    }
+    .tabs-nav__btn:nth-child(2n + 1):not(:last-child) {
+        margin-right: 0;
     }
 }

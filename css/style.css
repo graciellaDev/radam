@@ -3,6 +3,8 @@
     --red: #f1474e;
     --light-pink: #f8a3a6;
     --hero-black: #0a0f2b;
+    --tab-btn-pink: #f57e83;
+    --black-title: #464646;
 }
 
 html {
@@ -295,6 +297,7 @@ html {
   /* hero */
   .hero {
       height: calc(100vh - 172px);
+      min-height: max-content;
       color: var(--hero-black);
       
   }
@@ -308,6 +311,8 @@ html {
          -ms-flex-direction: column;
              flex-direction: column;
       height: 100%;
+      padding-top: 70px;
+      padding-bottom: 70px;
       background-color: var(--light-pink);
       background-image: url("../img/Bg_hero.jpg");
       background-repeat: no-repeat;
@@ -317,11 +322,204 @@ html {
 
   .hero__title {
       max-width: 49%;
+      margin: 0;
+      margin-bottom: 10px;
   }
 
   .hero__description {
       max-width: 43%;
+      margin: 0;
       font-weight: 400;
       font-size: 33px;
       line-height: 35px;
+  }
+
+  /* services */
+  .tabs-nav {
+      position: relative;
+      top: -50px;
+      -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+       justify-content: space-between;
+  }
+
+  .tabs-nav__btn:not(:last-child) {
+      margin-right: 15px;
+  }
+
+  .tabs-nav__btn {
+         -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+      -webkit-box-align: center;
+         -ms-flex-align: center;
+            align-items: center;
+      width: 300px;
+      padding: 30px;
+      border-radius: 20px;
+      background-color: var(--tab-btn-pink);
+      -webkit-transition: background-color .3s linear, width .3s linear;
+           -o-transition: background-color .3s linear, width .3s linear;
+              transition: background-color .3s linear, width .3s linear;
+  }
+
+  .tabs-nav__btn:hover {
+      background-color: var(--red);
+  }
+
+  .tabs-nav__btn_red {
+      background-color: var(--red);
+  }
+
+  .tabs-nav__btn_red:hover {
+      background-color: var(--tab-btn-pink);
+    }
+
+  .tab-icon {
+      height: 90px;
+      margin-bottom: 30px;
+  }
+
+  .tab-title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: white;
+      text-transform: uppercase;
+  }
+
+  .tab-content {
+      position: relative;
+      padding-top: 50px;
+  }
+
+  .tab-content__arrows {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 179px;
+      height: 79px;
+      font-size: 0;
+  }
+
+  .tab-arrow {
+      width: 50%;
+      height: inherit;
+      background-color: var(--tab-btn-pink);
+      -webkit-transition: background-color .3s linear, width .3s linear;
+           -o-transition: background-color .3s linear, width .3s linear;
+              transition: background-color .3s linear, width .3s linear;
+  }
+
+  .tab-arrow:hover {
+      background-color: var(--red);
+  }
+
+  .tab-content {
+      color: var(--black-title);
+      background: url("../img/Bg_services.jpg") no-repeat right top / 57%;
+  }
+
+  .tab-description {
+      position: absolute;
+      top: 0;
+      width: 50%;
+      padding-right: 10%;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all .3s linear, width .3s linear;
+           -o-transition: all .3s linear, width .3s linear;
+              transition: all .3s linear, width .3s linear;
+  }
+
+  .tab-description-active {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .tab-text {
+      margin: 0;
+      margin-bottom: 16px;
+      word-break: break-all;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+  }
+
+  .tab-descr-title {
+      position: relative;
+      max-width: 368px;
+      margin: 0;
+      margin-bottom: 47px;
+      padding-left: 105px;
+  }
+
+  .tab-descr-title::before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 50px);
+      left: 2px;
+      display: block;
+      width: 75px;
+      height: 90px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      -webkit-filter: invert(1);
+              filter: invert(1);
+   }
+
+  .tab-descr-title_system::before {
+      background-image: url("../img/icon_tab_system.svg");
+  }
+
+  .tab-descr-title_cold::before {
+      background-image: url("../img/icon_tab_cold.svg");
+  }
+
+  .tab-descr-title_cold::before {
+      background-image: url("../img/icon_tab_cold.svg");
+  }
+
+  .tab-descr-title_technology::before {
+      background-image: url("../img/icon_tab_technology.svg");
+  }
+
+  .tab-descr-title_mounting::before {
+    background-image: url("../img/icon_tab_mounting.svg");
+  }
+
+  .tab-descr-title_project::before {
+    background-image: url("../img/icon_tab_project.svg");
+  }
+
+  .tab-link {
+      color: var(--red);
+      text-decoration: underline;
+  }
+
+  .tab-text-red {
+    color: var(--red);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .tab-list {
+      padding-left: 35px;
+  }
+
+  .tab-list__item {
+      font-size: 14px;
+  }
+
+  .tab-list__item:not(:last-child) {
+      margin-bottom: 15px;
+  }
+
+  .tab-list__item::marker {
+      color: var(--red);
   }
