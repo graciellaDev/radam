@@ -32,6 +32,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .services__container {
+        background-image: none;
+    }
+
     .top-link.top-mail,
     .top-link.top-map {
         display: none;

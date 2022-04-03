@@ -335,6 +335,10 @@ html {
   }
 
   /* services */
+  .services__container {
+    background: url("../img/Bg_tabs.png") no-repeat right 50px / 50%;
+  }
+
   .tabs-nav {
       position: relative;
       top: -50px;
@@ -419,7 +423,7 @@ html {
 
   .tab-content {
       color: var(--black-title);
-      background: url("../img/Bg_services.jpg") no-repeat right top / 57%;
+      background: url("../img/tab-1.png") no-repeat right 50px / 50%;
   }
 
   .tab-description {
