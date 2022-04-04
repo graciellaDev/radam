@@ -168,6 +168,10 @@ html {
       overflow: hidden;
   }
 
+  .margin-bottom-70 {
+    margin-bottom: 70px;
+  }
+
   /* header */
   .top-bar {
     font-size: 14px;
@@ -188,9 +192,6 @@ html {
 
   .top-bar__contacts,
   .top-list {
-    -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
-     justify-content: space-between;
     flex-grow: 1;
   }
 
@@ -205,11 +206,14 @@ html {
   }
 
   .top-bar__flags {
+    -webkit-box-pack: end;
+       -ms-flex-pack: end;
+     justify-content: flex-end;
       max-width: 144px;
   }
 
   .top-list__item:not(:last-child) {
-      margin-right: 15px;
+      margin-right: 20px;
   }
 
   .top-list__item {
@@ -397,6 +401,7 @@ html {
   .tab-content {
       position: relative;
       padding-top: 50px;
+      overflow: hidden;
   }
 
   .tab-content__arrows {
@@ -484,16 +489,12 @@ html {
       background-image: url("../img/icon_tab_cold.svg");
   }
 
-  .tab-descr-title_cold::before {
-      background-image: url("../img/icon_tab_cold.svg");
-  }
-
   .tab-descr-title_technology::before {
       background-image: url("../img/icon_tab_technology.svg");
   }
 
-  .tab-descr-title_mounting::before {
-    background-image: url("../img/icon_tab_mounting.svg");
+  .tab-descr-title_trube::before {
+    background-image: url("../img/icon_tab_trube.svg");
   }
 
   .tab-descr-title_project::before {
@@ -513,7 +514,7 @@ html {
   }
 
   .tab-list {
-      padding-left: 35px;
+      padding-left: 17px;
   }
 
   .tab-list__item {
