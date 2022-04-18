@@ -7,8 +7,10 @@
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <title>Radam - пажарныя сістэмы</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.7.3.1.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script defer src="js/swiper/swiper-bundle.min.7.3.1.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -41,6 +43,11 @@
                     <li class="top-list__item">
                         <a href="/">
                             BY
+                        </a>
+                    </li>
+                    <li class="top-list__item">
+                        <a href="/">
+                            UK
                         </a>
                     </li>
                     <li class="top-list__item">
@@ -109,20 +116,51 @@
         </div>
     </header>
     <main class="main">
-        <section class="section section hero">
-            <div class="container hero__container flex">
-                <h1 class="first-title hero__title">
-                    Праектаванне, мантаж, абслугоўванне
-                </h1>
-                <p class="hero__description">
-                    пажарнай сігналізацыі, аўтаматычнага пажаратушэння, сістэмы аховы і тэхналагічнага абсталявання. Холадазабеспячэнне.
-                </p>
+        <section class="section section hero swiper hero__swiper">
+            <div class="container hero__container swiper-wrapper">
+                <div class="swiper-slide hero__slide hero__slide_back-img-1 flex">
+                    <h1 class="first-title hero__title">
+                        Праектаванне, мантаж, абслугоўванне
+                    </h1>
+                    <p class="hero__description">
+                        пажарнай сігналізацыі, аўтаматычнага пажаратушэння, сістэмы аховы і тэхналагічнага абсталявання. Холадазабеспячэнне.
+                    </p>
+                </div>
+                <div class="swiper-slide hero__slide hero__slide_back-img-2 flex">
+                    <h1 class="first-title hero__title">
+                        Праектаванне, мантаж, абслугоўванне
+                    </h1>
+                    <p class="hero__description">
+                        пажарнай сігналізацыі, аўтаматычнага пажаратушэння, сістэмы аховы і тэхналагічнага абсталявання. Холадазабеспячэнне.
+                    </p>
+                </div>
+                <div class="swiper-slide hero__slide hero__slide_back-img-3 flex">
+                    <h1 class="first-title hero__title">
+                        Праектаванне, мантаж, абслугоўванне
+                    </h1>
+                    <p class="hero__description">
+                        пажарнай сігналізацыі, аўтаматычнага пажаратушэння, сістэмы аховы і тэхналагічнага абсталявання. Холадазабеспячэнне.
+                    </p>
+                </div>
             </div>
+            <div class="hero__navigation">
+                <div class="hero-button-next swiper-button-next">
+                    <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45.7071 8.70711C46.0976 8.31658 46.0976 7.68342 45.7071 7.29289L39.3431 0.928932C38.9526 0.538408 38.3195 0.538408 37.9289 0.928932C37.5384 1.31946 37.5384 1.95262 37.9289 2.34315L43.5858 8L37.9289 13.6569C37.5384 14.0474 37.5384 14.6805 37.9289 15.0711C38.3195 15.4616 38.9526 15.4616 39.3431 15.0711L45.7071 8.70711ZM0 9H45V7H0L0 9Z" fill="#F1474E"/>
+                    </svg>
+                </div>
+                <div class="hero-button-prev swiper-button-prev">
+                    <svg width="46" height="16" viewBox="0 0 46 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM46 7L1 7V9L46 9V7Z" fill="#F1474E"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="hero__pagination"></div>
         </section>
         <section class="section services">
             <div class="container services__container">
                 <div class="tabs-nav flex">
-                    <button class="tabs-nav__btn btn-reset flex" data-path="system">
+                    <button class="tabs-nav__btn tabs-nav__btn_active btn-reset flex" data-path="system">
                         <img class="tab-icon" src="img/icon_tab_system.svg" alt="карцінка шчыт">
                         <h3 class="tab-title">
                             Пажарная бяспека. Сыстэмы аховы.
@@ -170,6 +208,11 @@
                                 разліковым шляхам.
                             </a> 
                         </p>
+                        <h3 class="title-tab-red">
+                            <span class="span-red-background">
+                                Пажарная бяспека. Сыстэмы аховы.
+                            </span>
+                        </h3>
                         <p class="tab-text">
                             Так сама адным з немалаважных чыннікаў, які можа прывесці да  прычынення страт на  прадпрыемствах з’яўляецца незаконнае пранікненне.
                         </p>
@@ -182,6 +225,10 @@
                         <p class="tab-text">
                             Для ажыцяўлення даннага віда дзейнасці  наша арганізацыя мае высокакваліфікаваны персанал, які мае кваліфікацыйныя атэстаты і своечасова атрымлівае павышэнне сваёй кваліфікацый у розных навучальных установах.
                         </p>
+                        <div class="tab-decoration">
+                            <img src="img/rusagro_1.jpg" width="200" alt="Картинка rusargo" class="tab-decoration__img">
+                            <img src="img/nornikel_2.jpg" width="300" alt="Картинка nornikel" class="tab-decoration__img">
+                        </div>
                         <p class="tab-text-red">
                             Мы аказваем наступныя паслугі па праектаванню і мантажу сістэм бяспекі:
                         </p>
@@ -488,7 +535,138 @@
                 </div>
             </div>
         </section>
+        <section class="section dengerous">
+            <div class="container dengerous__container flex">
+                <ul class="dengerous-list list-reset">
+                    <li class="dengerous-list__item">
+                        <h3 class="dengeous-title">
+                            Пажарная бяспека. Сыстэмы аховы.
+                        </h3>
+                        <p class="dengerous-descr">
+                            Для ўвода аб’екта ў экплуатацыю  пасля  завяршэння  мадэрнізацыі,  рэканструкцыі  або  будовы новага аб’екта абавязкова патрэбна атрымаць станоўчы адказ МНС(Міністэрства па  надзвычайных сітуацыях), якой атрымліваецца пасля прыемкі і правядзення  комплексных  выпрабаванняў сістэм пажарнай бяспекі згодна з праектнай дакументацыяй і дзеючымі нарматыўнымі дакументамі.зліковым шляхам. 
+                        </p>
+                    </li>
+                    <li class="dengerous-list__item">
+                        <h3 class="dengeous-title">
+                            Пажарная бяспека. Сыстэмы аховы.
+                        </h3>
+                        <p class="dengerous-descr">
+                            Для ўвода аб’екта ў экплуатацыю  пасля  завяршэння  мадэрнізацыі,  рэканструкцыі  або  будовы новага аб’екта абавязкова патрэбна атрымаць станоўчы адказ МНС(Міністэрства па  надзвычайных сітуацыях), якой атрымліваецца пасля прыемкі і правядзення  комплексных  выпрабаванняў сістэм пажарнай бяспекі згодна з праектнай дакументацыяй і дзеючымі нарматыўнымі дакументамі.зліковым шляхам. 
+                        </p>
+                    </li>
+                </div>
+            </div>
+        </section>
+        <section class="section partners">
+            <div class="container partners__container flex">
+                <h2 class="partners__left">
+                    нашы партнеры:
+                </h2>
+                <div class="partners__right flex">
+                    <div class="swiper partners__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partners__slide">
+                                <img src="img/partners/rusagro_1.jpg" alt="Логотип">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="img/partners/nornikel_1.jpg" alt="Логотип">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="img/partners/sheremet_1.jpg" alt="Логотип">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="img/partners/rusagro_1.jpg" alt="Логотип">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="img/partners/nornikel_1.jpg" alt="Логотип">
+                            </div>
+                            <div class="swiper-slide partners__slide">
+                                <img src="img/partners/sheremet_1.jpg" alt="Логотип">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="partners-navigation">
+                        <div class="swiper-button-prev partners-button-prev"></div>
+                        <div class="swiper-button-next partners-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer-navigation flex">
+                <div class="footer-navigation__col footer-navigation__col_map">
+                    <h2 class="footer-title">
+                        Контакты
+                    </h2>
+                    <p class="footer-descr">
+                        Юр. адрэс/паштовы адрэс: 220014, Рэспублiка Беларусь, г. Мiнск, вул. Папова, д.26, пам.2
+                    </p>
+                    <a href="tel:+375293619517" class="footer-link">
+                        +375 29 361-95-17
+                    </a>
+                    <a href="mailto:info@gk-radam.by" class="footer-link">
+                        info@gk-radam.by
+                    </a>
+                </div>
+                <div class="footer-navigation__col">
+                    <h2 class="footer-title">
+                        меню
+                    </h2>
+                    <a href="#" class="footer-link">
+                        пра нас
+                    </a>
+                    <a href="#" class="footer-link">
+                        паслугі
+                    </a>
+                    <a href="#" class="footer-link">
+                        нашы працы
+                    </a>
+                    <a href="#" class="footer-link">
+                        водгукі
+                    </a>
+                    <a href="#" class="footer-link">
+                        кантакты
+                    </a>
+                </div>
+                <div class="footer-navigation__col">
+                    <h2 class="footer-title">
+                        паслугi
+                    </h2>
+                    <a href="#" class="footer-link">
+                        Пожарная безопаснойсть
+                    </a>
+                    <a href="#" class="footer-link">
+                        Хладоснабжение
+                    </a>
+                    <a href="#" class="footer-link">
+                        Котельные
+                    </a>
+                    <a href="#" class="footer-link">
+                        Трудопроводы
+                    </a>
+                    <a href="#" class="footer-link">
+                        3d моделирование
+                    </a>
+                </div>
+                <div class="footer-navigation__col footer-navigation__col_info">
+                    <h2 class="footer-title">
+                        оферта
+                    </h2>
+                    <p class="footer-descr">
+                        Для ўвода аб’екта ў экплуатацыю  пасля  завяршэння  мадэрнізацыі,  рэканструкцыі  або  будовы новага аб’екта абавязкова патрэбна атрымаць станоўчы адказ МНС
+                    </p>
+                </div>
+            </div>
+            <div class="footer-copyright flex">
+                <p class="footer-copyright__text">
+                    copyright © 2005-2022 gk-radam
+                </p>
+                <img class="footer-copyright__logo" src="img/Logo.svg" alt="Логотип radam">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
